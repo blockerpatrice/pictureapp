@@ -25,8 +25,6 @@ app.use((err, req, res, next) => {
  
  //app.use("/auth", require("./routes/auth"));
  //app.use("/api", expressJwt({secret: process.env.SECRET}));
-
- 
  
  app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}`);
