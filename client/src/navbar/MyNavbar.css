@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.navbar {
+    font-weight: bold;
+    
+}
+
+.nav-containter{
+    align-items: center;
+}
+
+.nav-link{
+    color:white;
+}
+
+.nav-link:hover{
+    color:#fdc12e;
+}
+.logo{
+    font-size:20pt;
+    color:white;
+    background-color:#373d42;
+    
+}
+
+.logo:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.logout-button{
+    background-color:#373d42;
+    color:white;
+    font-weight: bold;
+}
+
+.logout-button:hover{
+    color:#fdc12e;
+}
+
+.welcome{
+    color:white;
+    font-size:20pt;
+}
