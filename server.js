@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
-const PORT = 2080;
 require("dotenv").config();
 const mongoose = require("mongoose");
 //const expressJwt = require("express-jwt");
+
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 const path = require("path")
@@ -29,8 +30,8 @@ app.use((err, req, res, next) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-app.listen(PORT, () => {
-    console.log(`App is listening on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`App is listening on port ${port}`);
  });
  
  //app.use("/auth", require("./routes/auth"));
