@@ -42,6 +42,7 @@ class HomeSearchBar extends Component {
                                 </button>
                             </div>
                         </div>
+                        <div className="disclaimer">*You must click on Search</div>
                     </div>
                 </form>
             </div>

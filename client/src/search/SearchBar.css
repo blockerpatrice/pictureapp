@@ -6,9 +6,14 @@
 
 .text{
     text-align: center;
-    font-size: 0pt;
-    color:white;
+    font-size: 35pt;
+    color:#373d42;
     padding:5%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.disclaimer{
+    text-align: center;
     font-family: 'Permanent Marker', cursive;
 }
 .search-button2{
