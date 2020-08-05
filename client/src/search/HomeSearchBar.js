@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import './SearchBar.css';
+import React, { Component } from "react";
+import "./SearchBar.css";
 import { Link } from "react-router-dom";
 import {withProvider} from "../GlobalProvider.js";
+import { withRouter } from "react-router-dom";
 
 class HomeSearchBar extends Component {
 
@@ -19,7 +20,12 @@ class HomeSearchBar extends Component {
         }, () => {
             this.props.setSearchWordProp(this.state.search);
         })
-       
+    }
+
+    handleKeypress = e => {
+      if (e.key ===  'Enter') {
+        alert('Please Click the Search button');
+      }
     }
 
     handleSubmit = (event) => {
@@ -35,11 +41,13 @@ class HomeSearchBar extends Component {
                 <form onSubmit = {this.handleSubmit}>
                     <div className="search-bar"> 
                         <div className="input-group mb-3">
-                            <input type="text" onChange={this.setSearchWord} value={this.state.search}  className="form-control" placeholder="Search free photos" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                            <input type="text" onChange={this.setSearchWord}  onKeyPress={this.handleKeypress} value={this.state.search}  className="form-control" placeholder="Search free photos" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                             <div className="input-group-append">
+
                                 <button type="submit" className="search-button">
-                                <Link to="/search" className="nav-link">Search</Link>
+                                    <Link to="/search" className="nav-link">Search</Link>
                                 </button>
+
                             </div>
                         </div>
                         <div className="disclaimer">*You must click on Search</div>

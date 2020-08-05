@@ -27,13 +27,11 @@ class Img extends Component {
   render(){
     return (
     <li className="img-wrap">
-      <img src={this.props.url} alt=""/>
-        <form onSubmit={this.handleDownload} >
-          <button className="download-btn" type="submit">Download</button>
+        <form onSubmit={this.handleDownload} className="form">
+          <button>
+            <img src={this.props.url} alt="" className="img-size"/>
+          </button>
         </form>
-        {/* <form onSubmit={this.handleSubmit}>
-          <input type="submit" className="save-btn" value="♡ Save"/>
-        </form> */}
     </li>
   );
   }

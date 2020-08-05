@@ -6,11 +6,10 @@ import App from "./App.js";
 import { BrowserRouter } from "react-router-dom";
 import Provider from "./GlobalProvider";
 
-
 ReactDOM.render(
-    <BrowserRouter>
-        <Provider>
-            <App/>
-        </Provider>
-    </BrowserRouter>,
+        <BrowserRouter>
+            <Provider>
+                <App/>
+            </Provider>
+        </BrowserRouter>,
 document.getElementById('root'))

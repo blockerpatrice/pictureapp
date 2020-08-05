@@ -21,8 +21,6 @@ li {
   list-style: none;
 }
 
-
-
 /* ================================= 
   Page Components
 ==================================== */
@@ -67,10 +65,6 @@ li {
   font-size: 1.25em;
 }
 
-.img-list a {
-  display: block;
-  margin: auto;
-}
 
 .img-wrap {
   background-color: #f6f7f7;
@@ -82,25 +76,14 @@ li {
   min-width: 100%;
 }
 
-.download-btn, .save-btn{
-  font-weight:bold;
-  margin-top:5px;
-  padding:4px;
-  margin:8px;
-  background-color:#4c4c4c;
-  color:white;
-  border-radius: 9px;
-  border: 2px solid lightslategray;
-
-}
-.download-btn:hover{
-  color:#fdc12e;
-
-}
-.save-btn:hover{
-  color:#fdc12e;
+.img-list{
+  display:flex;
+  flex-wrap: wrap;
 }
 
+.img-size{
+  width:100%
+}
 
 /* ================================= 
   Layout Styles

@@ -21,7 +21,6 @@ class SearchPage extends Component {
         }, () => {
             this.props.setSearchWordProp(this.state.search);
         })
-       
     }
 
     componentDidMount(){
@@ -35,6 +34,7 @@ class SearchPage extends Component {
             console.log('Error happened during fetching!', err);
         });
     }
+    
     handleSubmit = (event) => {
         event.preventDefault();
         console.log("test");
@@ -58,9 +58,7 @@ class SearchPage extends Component {
                         <div className="search-bar"> 
                             <div className="input-group mb-3">
                                 <input type="text" onChange={this.setSearch} value={this.state.search}  className="form-control" placeholder="Search free photos" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                            
-                            <input type="submit" className="search-button2"/>
-                                    
+                                <input type="submit" className="search-button2"/>   
                             </div>
                         </div>
                     </form>
@@ -70,7 +68,6 @@ class SearchPage extends Component {
                     <ImgList data={this.state.imgs} />
                 </div>
             </div>
-  
         );
     }
 }

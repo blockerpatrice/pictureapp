@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
-
   },
   "repository": {
     "type": "git",
@@ -25,9 +24,11 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.6",
     "nodemon": "^2.0.2",
+    "react-alert": "^7.0.2",
+    "react-alert-template-basic": "^1.0.0",
     "react-router-dom": "^5.1.2"
   },
   "engines": {
     "node": "8.9.2"
-}
+  }
 }
